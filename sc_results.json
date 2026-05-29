@@ -1,0 +1,47 @@
+{
+    "project_name": "Scheduled Caste Population Growth & Demographic Forecasting System",
+    "author": "Sagnik Patra",
+    "dataset_path": "C:\\Users\\NXTWAVE\\Downloads\\Scheduled Caste Population Growth & Demographic Forecasting System\\Percentage_of_Scheduled_Caste_Population_to_Total_Population.csv",
+    "output_directory": "C:\\Users\\NXTWAVE\\Downloads\\Scheduled Caste Population Growth & Demographic Forecasting System",
+    "target_column": "Estimated_2021_Total_SC_Percentage",
+    "features_used": [
+        "Percentage of Scheduled Caste Population _2001_Rural",
+        "Percentage of Scheduled Caste Population _2001_Urban",
+        "Percentage of Scheduled Caste Population _2001_Total",
+        "Percentage of Scheduled Caste Population _2011_Rural",
+        "Percentage of Scheduled Caste Population _2011_Urban",
+        "Percentage of Scheduled Caste Population _2011_Total",
+        "Rural_Growth",
+        "Urban_Growth",
+        "Total_Growth",
+        "Rural_Urban_Gap_2011"
+    ],
+    "best_model": "RandomForest",
+    "best_r2_score": 0.9684743276776058,
+    "model_results": [
+        {
+            "Model": "RandomForest",
+            "MAE": 0.8011021739130482,
+            "MSE": 2.2837480582608785,
+            "RMSE": 1.5112074835246412,
+            "R2_Score": 0.9684743276776058,
+            "Accuracy_Percentage": 96.84743276776058
+        },
+        {
+            "Model": "GradientBoosting",
+            "MAE": 0.8193718102450976,
+            "MSE": 2.378374253865388,
+            "RMSE": 1.542197864693564,
+            "R2_Score": 0.9671680739404863,
+            "Accuracy_Percentage": 96.71680739404863
+        },
+        {
+            "Model": "DeepNeuralNetwork",
+            "MAE": 1.5531395157523777,
+            "MSE": 12.463262684576799,
+            "RMSE": 3.5303346420101307,
+            "R2_Score": 0.8279526789127942,
+            "Accuracy_Percentage": 82.79526789127942
+        }
+    ]
+}

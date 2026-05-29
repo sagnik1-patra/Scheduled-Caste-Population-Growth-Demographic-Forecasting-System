@@ -1,0 +1,54 @@
+{
+    "project_name": "Scheduled Caste Population Growth & Demographic Forecasting System",
+    "author": "Sagnik Patra",
+    "algorithm": "Harmony Search Algorithm Feature Selection",
+    "dataset_path": "C:\\Users\\NXTWAVE\\Downloads\\Scheduled Caste Population Growth & Demographic Forecasting System\\Percentage_of_Scheduled_Caste_Population_to_Total_Population.csv",
+    "output_directory": "C:\\Users\\NXTWAVE\\Downloads\\Scheduled Caste Population Growth & Demographic Forecasting System",
+    "target_column": "Estimated_2021_Total_SC_Percentage",
+    "all_features": [
+        "Percentage of Scheduled Caste Population _2001_Rural",
+        "Percentage of Scheduled Caste Population _2001_Urban",
+        "Percentage of Scheduled Caste Population _2001_Total",
+        "Percentage of Scheduled Caste Population _2011_Rural",
+        "Percentage of Scheduled Caste Population _2011_Urban",
+        "Percentage of Scheduled Caste Population _2011_Total",
+        "Rural_Growth",
+        "Urban_Growth",
+        "Total_Growth",
+        "Rural_Urban_Gap_2011"
+    ],
+    "selected_features": [
+        "Percentage of Scheduled Caste Population _2001_Total",
+        "Percentage of Scheduled Caste Population _2011_Total",
+        "Total_Growth"
+    ],
+    "best_model": "HSA_DeepNeuralNetwork",
+    "best_r2_score": 0.991731011670675,
+    "best_hsa_fitness": 0.9832025413820292,
+    "model_results": [
+        {
+            "Model": "HSA_RandomForest",
+            "MAE": 0.5569010869565206,
+            "MSE": 1.0128109227717446,
+            "RMSE": 1.0063850767831093,
+            "R2_Score": 0.9860187969682791,
+            "Accuracy_Percentage": 98.60187969682791
+        },
+        {
+            "Model": "HSA_GradientBoosting",
+            "MAE": 0.639516334039302,
+            "MSE": 1.3139746469059255,
+            "RMSE": 1.1462873317392657,
+            "R2_Score": 0.9818614255594222,
+            "Accuracy_Percentage": 98.18614255594223
+        },
+        {
+            "Model": "HSA_DeepNeuralNetwork",
+            "MAE": 0.5199170825792392,
+            "MSE": 0.5990129519763939,
+            "RMSE": 0.7739592702309301,
+            "R2_Score": 0.991731011670675,
+            "Accuracy_Percentage": 99.1731011670675
+        }
+    ]
+}

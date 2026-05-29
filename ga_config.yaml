@@ -1,0 +1,49 @@
+best_model: GA_DeepNeuralNetwork
+ga_parameters:
+  crossover_rate: 0.8
+  elitism_count: 2
+  generations: 30
+  mutation_rate: 0.1
+  population_size: 30
+paths:
+  best_model_pkl: C:\Users\NXTWAVE\Downloads\Scheduled Caste Population Growth & Demographic
+    Forecasting System\ga_best_model.pkl
+  dataset_path: C:\Users\NXTWAVE\Downloads\Scheduled Caste Population Growth & Demographic
+    Forecasting System\Percentage_of_Scheduled_Caste_Population_to_Total_Population.csv
+  feature_selection_json: C:\Users\NXTWAVE\Downloads\Scheduled Caste Population Growth
+    & Demographic Forecasting System\ga_feature_selection.json
+  h5_model: C:\Users\NXTWAVE\Downloads\Scheduled Caste Population Growth & Demographic
+    Forecasting System\ga_deep_learning_model.h5
+  json_results: C:\Users\NXTWAVE\Downloads\Scheduled Caste Population Growth & Demographic
+    Forecasting System\ga_results.json
+  output_directory: C:\Users\NXTWAVE\Downloads\Scheduled Caste Population Growth &
+    Demographic Forecasting System
+  predictions_csv: C:\Users\NXTWAVE\Downloads\Scheduled Caste Population Growth &
+    Demographic Forecasting System\ga_predictions.csv
+  results_csv: C:\Users\NXTWAVE\Downloads\Scheduled Caste Population Growth & Demographic
+    Forecasting System\ga_results.csv
+  scaler_pkl: C:\Users\NXTWAVE\Downloads\Scheduled Caste Population Growth & Demographic
+    Forecasting System\ga_scaler.pkl
+project:
+  algorithm: GA
+  author: Sagnik Patra
+  name: Scheduled Caste Population Growth & Demographic Forecasting System
+  prefix: ga_
+training:
+  all_features:
+  - Percentage of Scheduled Caste Population _2001_Rural
+  - Percentage of Scheduled Caste Population _2001_Urban
+  - Percentage of Scheduled Caste Population _2001_Total
+  - Percentage of Scheduled Caste Population _2011_Rural
+  - Percentage of Scheduled Caste Population _2011_Urban
+  - Percentage of Scheduled Caste Population _2011_Total
+  - Rural_Growth
+  - Urban_Growth
+  - Total_Growth
+  - Rural_Urban_Gap_2011
+  random_state: 42
+  selected_features:
+  - Percentage of Scheduled Caste Population _2011_Total
+  - Total_Growth
+  target_column: Estimated_2021_Total_SC_Percentage
+  test_size: 0.2
