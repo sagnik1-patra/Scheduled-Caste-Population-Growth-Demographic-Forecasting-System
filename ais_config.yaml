@@ -1,0 +1,48 @@
+ais_parameters:
+  clone_factor: 5
+  generations: 30
+  mutation_rate: 0.2
+  population_size: 20
+best_model: AIS_DeepNeuralNetwork
+paths:
+  best_model_pkl: C:\Users\NXTWAVE\Downloads\Scheduled Caste Population Growth & Demographic
+    Forecasting System\ais_best_model.pkl
+  dataset_path: C:\Users\NXTWAVE\Downloads\Scheduled Caste Population Growth & Demographic
+    Forecasting System\Percentage_of_Scheduled_Caste_Population_to_Total_Population.csv
+  feature_selection_json: C:\Users\NXTWAVE\Downloads\Scheduled Caste Population Growth
+    & Demographic Forecasting System\ais_feature_selection.json
+  h5_model: C:\Users\NXTWAVE\Downloads\Scheduled Caste Population Growth & Demographic
+    Forecasting System\ais_deep_learning_model.h5
+  json_results: C:\Users\NXTWAVE\Downloads\Scheduled Caste Population Growth & Demographic
+    Forecasting System\ais_results.json
+  output_directory: C:\Users\NXTWAVE\Downloads\Scheduled Caste Population Growth &
+    Demographic Forecasting System
+  predictions_csv: C:\Users\NXTWAVE\Downloads\Scheduled Caste Population Growth &
+    Demographic Forecasting System\ais_predictions.csv
+  results_csv: C:\Users\NXTWAVE\Downloads\Scheduled Caste Population Growth & Demographic
+    Forecasting System\ais_results.csv
+  scaler_pkl: C:\Users\NXTWAVE\Downloads\Scheduled Caste Population Growth & Demographic
+    Forecasting System\ais_scaler.pkl
+project:
+  algorithm: AIS
+  author: Sagnik Patra
+  name: Scheduled Caste Population Growth & Demographic Forecasting System
+  prefix: ais_
+training:
+  all_features:
+  - Percentage of Scheduled Caste Population _2001_Rural
+  - Percentage of Scheduled Caste Population _2001_Urban
+  - Percentage of Scheduled Caste Population _2001_Total
+  - Percentage of Scheduled Caste Population _2011_Rural
+  - Percentage of Scheduled Caste Population _2011_Urban
+  - Percentage of Scheduled Caste Population _2011_Total
+  - Rural_Growth
+  - Urban_Growth
+  - Total_Growth
+  - Rural_Urban_Gap_2011
+  random_state: 42
+  selected_features:
+  - Percentage of Scheduled Caste Population _2011_Total
+  - Total_Growth
+  target_column: Estimated_2021_Total_SC_Percentage
+  test_size: 0.2

@@ -1,0 +1,53 @@
+{
+    "project_name": "Scheduled Caste Population Growth & Demographic Forecasting System",
+    "author": "Sagnik Patra",
+    "algorithm": "Bat Algorithm Feature Selection",
+    "dataset_path": "C:\\Users\\NXTWAVE\\Downloads\\Scheduled Caste Population Growth & Demographic Forecasting System\\Percentage_of_Scheduled_Caste_Population_to_Total_Population.csv",
+    "output_directory": "C:\\Users\\NXTWAVE\\Downloads\\Scheduled Caste Population Growth & Demographic Forecasting System",
+    "target_column": "Estimated_2021_Total_SC_Percentage",
+    "all_features": [
+        "Percentage of Scheduled Caste Population _2001_Rural",
+        "Percentage of Scheduled Caste Population _2001_Urban",
+        "Percentage of Scheduled Caste Population _2001_Total",
+        "Percentage of Scheduled Caste Population _2011_Rural",
+        "Percentage of Scheduled Caste Population _2011_Urban",
+        "Percentage of Scheduled Caste Population _2011_Total",
+        "Rural_Growth",
+        "Urban_Growth",
+        "Total_Growth",
+        "Rural_Urban_Gap_2011"
+    ],
+    "selected_features": [
+        "Percentage of Scheduled Caste Population _2011_Total",
+        "Total_Growth"
+    ],
+    "best_model": "BA_DeepNeuralNetwork",
+    "best_r2_score": 0.9959393015806378,
+    "best_ba_fitness": 0.9846944186234986,
+    "model_results": [
+        {
+            "Model": "BA_RandomForest",
+            "MAE": 0.5533326086956559,
+            "MSE": 0.9729433841304423,
+            "RMSE": 0.9863789252262248,
+            "R2_Score": 0.986569142683937,
+            "Accuracy_Percentage": 98.6569142683937
+        },
+        {
+            "Model": "BA_GradientBoosting",
+            "MAE": 0.6285373291059146,
+            "MSE": 1.3199778420729718,
+            "RMSE": 1.148902886267143,
+            "R2_Score": 0.9817785553132762,
+            "Accuracy_Percentage": 98.17785553132762
+        },
+        {
+            "Model": "BA_DeepNeuralNetwork",
+            "MAE": 0.26225601507269836,
+            "MSE": 0.2941606458243236,
+            "RMSE": 0.5423657860008535,
+            "R2_Score": 0.9959393015806378,
+            "Accuracy_Percentage": 99.59393015806378
+        }
+    ]
+}
