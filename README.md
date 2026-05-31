@@ -1,6 +1,6 @@
 # 🏛️ Scheduled Caste Population Growth & Demographic Forecasting System
 
-## 🧠 Scheduled Caste Population Distribution Prediction using Machine Learning & Bio-Inspired Optimization
+## 🧠 Scheduled Caste Population Distribution Prediction using Machine Learning & Bio-Inspired Optimization 
 
 ---
 
